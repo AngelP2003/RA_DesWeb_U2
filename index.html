@@ -3,6 +3,8 @@
 <head>
     <meta charset="UTF-8">
     <title>TexhStore</title>
+
+   
 </head>
 <body>
 
@@ -15,9 +17,10 @@
     <!-- Botones de filtro -->
     <section>
         <h2>Filtros</h2>
-        <button>Celulares</button>
-        <button>Laptops</button>
-        <button>Accesorios</button>
+        <button class="filtro-btn activo" data-filtro="todos">Mostrar todos</button>
+        <button class="filtro-btn" data-filtro="celular">Celulares</button>
+        <button class="filtro-btn" data-filtro="laptop">Laptops</button>
+        <button class="filtro-btn" data-filtro="accesorio">Accesorios</button>
     </section>
 
     <hr>
@@ -29,19 +32,19 @@
         <!-- Celulares -->
         <h3>Celulares</h3>
 
-        <div>
+        <div class="producto celular">
             <h4>iPhone 15</h4>
             <img src="" alt="iPhone 15">
             <p>Precio: $18,999</p>
         </div>
 
-        <div>
+        <div class="producto celular">
             <h4>Samsung Galaxy S23</h4>
             <img src="" alt="Samsung Galaxy S23">
             <p>Precio: $17,499</p>
         </div>
 
-        <div>
+        <div class="producto celular">
             <h4>Xiaomi Redmi Note 13</h4>
             <img src="" alt="Xiaomi Redmi Note 13">
             <p>Precio: $6,999</p>
@@ -52,19 +55,19 @@
         <!-- Laptops -->
         <h3>Laptops</h3>
 
-        <div>
+        <div class="producto laptop">
             <h4>MacBook Air M2</h4>
             <img src="" alt="MacBook Air M2">
             <p>Precio: $24,999</p>
         </div>
 
-        <div>
+        <div class="producto laptop">
             <h4>HP Pavilion 15</h4>
             <img src="" alt="HP Pavilion 15">
             <p>Precio: $14,999</p>
         </div>
 
-        <div>
+        <div class="producto laptop">
             <h4>Lenovo IdeaPad 3</h4>
             <img src="" alt="Lenovo IdeaPad 3">
             <p>Precio: $11,499</p>
@@ -75,19 +78,19 @@
         <!-- Accesorios -->
         <h3>Accesorios</h3>
 
-        <div>
+        <div class="producto accesorio">
             <h4>Audífonos Bluetooth Sony WH-1000XM5</h4>
             <img src="" alt="Audífonos Sony">
             <p>Precio: $7,999</p>
         </div>
 
-        <div>
+        <div class="producto accesorio">
             <h4>Mouse Logitech G502</h4>
             <img src="" alt="Mouse Logitech">
             <p>Precio: $1,299</p>
         </div>
 
-        <div>
+        <div class="producto accesorio">
             <h4>Teclado Mecánico Redragon K552</h4>
             <img src="" alt="Teclado Redragon">
             <p>Precio: $899</p>
@@ -101,6 +104,9 @@
     <footer>
         <p>&copy; 2026 TexhStore</p>
     </footer>
+
+    <!-- JS externo -->
+    <script src="script.js"></script>
 
 </body>
 </html>
