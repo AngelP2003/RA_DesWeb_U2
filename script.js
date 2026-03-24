@@ -8,7 +8,7 @@ botones.forEach(boton => {
         // Filtrar productos
         productos.forEach(producto => {
             if (categoria === "todos" || producto.classList.contains(categoria)) {
-                producto.style.display = "block";
+                producto.style.display = "inline-block";
             } else {
                 producto.style.display = "none";
             }
